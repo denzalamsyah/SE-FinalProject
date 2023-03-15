@@ -1,0 +1,116 @@
+// Rizwan Alamsyah BE4821229
+// Final Project -- Pemesanan makanan/minuman via online
+
+PROGRAM Pemesanan makanan/minuman via online Rizwan Alamsyah
+
+
+START
+
+using FinalProject std;
+
+int main(){
+
+// Declaration Variabel
+
+    char email_noHp,
+    password,
+    makanan_minuman,
+    metode_pembayaran,
+    pilihan,
+    identitas,
+    alamat;
+
+    double jumlah_pesanan,
+    harga,
+    total_pembayaran;
+
+
+/* Masuk ke aplikasi pemesanan makanan/minuman */
+
+/* melakukan login */
+
+    cout<<"Masukkan email/no hp:";
+    cin>> email_noHp;
+    cout<<"Masukkan Password:";
+    cin>> password;
+
+    IF (email_noHp && password" == true){
+        cout<<"Anda Berhasil Login"
+    }ELSE{
+        cout<<"Anda gagal login"}
+
+
+/* Halaman Utama */
+
+    cout<< "masukan nama makanan/minuman yang dicari:";
+    cin >> makanan_minuman;
+    IF (makanan_minuman == true){
+        cout<< "tampilkan pilihan makanan/minuman & harganya";
+    }ELSE{
+        WHILE(makanan_minuman == false)
+        DO cout<< "makanan/minuman tidak ditemukan";
+        }
+    
+
+/* memilih makanan/minuman */
+
+    cout<< "pilih makanan/minuman:";
+    cin>> makanan_minuman;
+
+
+/* masukan ke keranjang */
+
+    IF(true){
+        cout<< "menampilkan daftar makanan/minuman di menu keranjang";
+    }else{
+        cout<< "Kembali ke halaman pilihan";
+    }
+
+
+/* Checkout */
+
+    total_pembayaran = jumlah_pesanan * harga;
+    cout<< "Tampilkan total harga :"<<total_pembayaran<<end1;
+
+
+/* atur alamat/identitas pembeli */
+
+    cout<<"Atur identitas pembeli:";
+    cin>>identitas;
+    cout<<"atur alamat pembeli:";
+    cin>>alamat;
+
+
+/* Atur metode pembayaran */
+
+    cout<<"pilih metode pembayaran:";
+    cin>>metode_pembayaran;
+
+
+/* bayar */
+
+    IF(true){
+        cout<<"Pesanan anda sedang diproses";
+    }ELSE{
+        cout<<"Kembali ke halaman checkout";
+    }
+
+
+/* Hasil Pembelian */
+
+    cout<<"Nama Pembeli :";
+    cin>>identitas;
+    cout<<"Alamat Lengkap:";
+    cin>>alamat;
+    cout<<"Nama produk:";
+    cin>>makanan_minuman;
+    cout<<"Jumlah Pesanan:";
+    cin>>jumlah_pesanan;
+    cout<<"Total Pembayaran:";
+    cin>>total_pembayaran;
+
+return 0;
+
+}
+
+END
